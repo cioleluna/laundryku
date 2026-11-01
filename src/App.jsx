@@ -1,3 +1,4 @@
+import CustomerAPI from './components/CustomerAPI.jsx';
 import React, { useState } from 'react';
 import Header from './components/Header.jsx';
 import SummaryCard from './components/SummaryCard.jsx';
@@ -99,6 +100,9 @@ function App() {
             <OrderList orders={orders} onDeleteOrder={deleteOrder} />
           </div>
         </section>
+
+        <CustomerAPI />
+
         <footer className="footer-note">LaundryKu <span>•</span> Kelola laundry dengan lebih praktis.</footer>
       </main>
     </div>
